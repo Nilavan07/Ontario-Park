@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontario Parks - Camping Reservations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-logo">
+                    <img src="logo.svg" alt="Ontario Logo">
+                </div>
+                <nav class="header-nav">
+                    <div class="dropdown">
+                        <button class="dropbtn">Parks ▼</button>
+                        <div class="dropdown-content">
+                            <a href="#">Park Locations</a>
+                            <a href="#">Park Activities</a>
+                            <a href="#">Park Maps</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">Event</a>
+                    <a href="#" class="nav-link">Guide Program</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Activities ▼</button>
+                        <div class="dropdown-content">
+                            <a href="#">Hiking</a>
+                            <a href="#">Camping</a>
+                            <a href="#">Fishing</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link">Rent Equipment</a>
+                    <a href="#" class="nav-link">Store</a>
+                    <a href="#" class="nav-button right-button">Book Now</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Image -->
+    <div class="hero-container">
+        <div class="hero-image">
+            <img src="camping-hero.jpg" alt="Camping in Ontario Parks">
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Campsite Tabs -->
+        <div class="campsite-tabs">
+            <button class="campsite-tab">Campsite</button>
+            <button class="campsite-tab active">Day Use</button>
+            <button class="campsite-tab">Backcountry</button>
+            <button class="campsite-tab">Accommodations</button>
+        </div>
+        
+        <!-- Content Text -->
+        <div class="content-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <hr class="divider">
+        
+        <!-- Reservation Form -->
+        <div class="reservation-form">
+            
+            <div class="inline-form-container">
+                <div class="form-group inline-form-group">
+                    <select id="park-area" class="form-input inline-form-input">
+                        <option value="">Select Park Area</option>
+                        <option value="1">Area 1</option>
+                        <option value="2">Area 2</option>
+                        <option value="3">Area 3</option>
+                    </select>
+                </div>
+                <div class="form-group inline-form-group">
+                    <input type="date" id="date-arrival" class="form-input inline-form-input" placeholder="Arrival">
+                </div>
+                <div class="form-group inline-form-group">
+                    <input type="date" id="date-departure" class="form-input inline-form-input" placeholder="Departure">
+                </div>
+                <div class="form-group inline-form-group">
+                    <select id="people" class="form-input inline-form-input">
+                        <option value="">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+                <div class="form-group inline-form-group">
+                    <select id="equipment" class="form-input inline-form-input">
+                        <option value="">Equipment</option>
+                        <option value="none">None</option>
+                        <option value="tent">Tent</option>
+                        <option value="rv">RV</option>
+                        <option value="trailer">Trailer</option>
+                    </select>
+                </div>
+                <button class="search-btn inline-search-btn">Search</button>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <!-- Top Parks -->
+        <h2 class="section-title">Top Parks to Visit This Season</h2>
+        
+        <div class="parks-container">
+            <div class="park-card">
+                <img src="arron-park.jpg" class="park-card-img" alt="Arron Park">
+                <div class="park-card-body">
+                    <h5 class="park-card-title">Arron Park</h5>
+                    <a href="#" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+            
+            <div class="park-card">
+                <img src="algonquin-park.jpg" class="park-card-img" alt="Algonquin Park">
+                <div class="park-card-body">
+                    <h5 class="park-card-title">Algonquin Park</h5>
+                    <a href="#" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+            
+            <div class="park-card">
+                <img src="bon-echo.jpg" class="park-card-img" alt="Bon Echo">
+                <div class="park-card-body">
+                    <h5 class="park-card-title">Bon Echo</h5>
+                    <a href="#" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+            
+            <div class="park-card">
+                <img src="silver-lake.jpg" class="park-card-img" alt="Silver Lake">
+                <div class="park-card-body">
+                    <h5 class="park-card-title">Silver Lake</h5>
+                    <a href="#" class="view-details-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <!-- Help Section -->
+        <h2 class="section-title">Need Help? We're Here for You!</h2>
+        
+        <table class="help-table">
+            <tr>
+                <td><a href="#" class="help-link">FAQs</a></td>
+                <td><a href="#" class="help-link">Accessibility Services</a></td>
+                <td><a href="#" class="help-link">Contact Info</a></td>
+            </tr>
+        </table>
+        
+        <hr class="divider">
+        
+        <!-- Footer Links -->
+        <div class="footer-grid">
+            <div class="footer-row">
+                <a href="#" class="footer-link">Parks</a>
+                <a href="#" class="footer-link">Activities</a>
+                <a href="#" class="footer-link">Fees</a>
+                <a href="#" class="footer-link">Donate</a>
+            </div>
+            <div class="footer-row">
+                <a href="#" class="footer-link">Event</a>
+                <a href="#" class="footer-link">Rent Equipment</a>
+                <a href="#" class="footer-link">Blog</a>
+                <a href="#" class="footer-link">Subscription</a>
+            </div>
+            <div class="footer-row">
+                <a href="#" class="footer-link">Guide Program</a>
+                <a href="#" class="footer-link">Store</a>
+                <a href="#" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Privacy and Security</a>
+            </div>
+        </div>
+        
+        <!-- Footer Notice -->
+        <div class="accessibility-notice">
+            We are committed to providing accessible customer service. If you need an alternative acceptable format of this content, please contact us, Ministry of the Environment, Conservation and Parks.
+        </div>
+        
+        <div class="copyright">
+            © King's Printer for Ontario, 2025
+        </div>
+        
+        <hr class="divider">
+        
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h3 class="newsletter-title">Park updates & travel tips. Subscribe now!</h3>
+            <input type="text" class="newsletter-input" placeholder="Enter your First Name...">
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
