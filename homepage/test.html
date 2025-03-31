@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ontario Parks - Camping Reservations</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="main-header py-3 bg-light border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="header-logo">
+        <img src="../logo.svg" alt="Ontario Logo" height="50" />
+      </div>
+      <nav class="header-nav d-flex align-items-center gap-3">
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Parks</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Park Locations</a></li>
+            <li><a class="dropdown-item" href="#">Park Activities</a></li>
+            <li><a class="dropdown-item" href="#">Park Maps</a></li>
+          </ul>
+        </div>
+        <a href="#" class="nav-link">Event</a>
+        <a href="#" class="nav-link">Guide Program</a>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Activities</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Hiking</a></li>
+            <li><a class="dropdown-item" href="#">Camping</a></li>
+            <li><a class="dropdown-item" href="#">Fishing</a></li>
+          </ul>
+        </div>
+        <a href="#" class="nav-link">Rent Equipment</a>
+        <a href="#" class="nav-link">Store</a>
+        <a href="#" class="btn btn-primary">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Video banner -->
+  <section class="video-banner position-relative text-center">
+    <div class="video-bg ratio ratio-16x9">
+      <iframe
+        src="https://www.youtube.com/embed/L3C8Z05T52I?autoplay=1&mute=1&loop=1&playlist=L3C8Z05T52I&controls=0&showinfo=0&rel=0&modestbranding=1"
+        title="YouTube video player"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="banner-content position-absolute top-50 start-50 translate-middle text-white">
+      <h1>Ontario Parks</h1>
+      <p>Find the perfect park, book your campsite, and</p>
+      <p>experience the outdoors like never before.</p>
+      <a href="#" class="btn btn-light">Book Now</a>
+    </div>
+  </section>
+
+<!-- Top Parks -->
+<div class="container my-5">
+    <!-- Section Header with controls -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="section-title mb-0">Protecting Nature for Future Generations</h2>
+      <div class="d-flex align-items-center gap-2">
+        <a href="#" class="text-decoration-none me-3 fw-semibold">View All</a>
+        <button class="btn btn-outline-secondary btn-sm prev-events">&lt;</button>
+        <button class="btn btn-outline-secondary btn-sm next-events">&gt;</button>
+      </div>
+    </div>
+  
+    <!-- Events Grid -->
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 event-track">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">Arron Park</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-380">
+          <img src="https://www.ontarioparks.ca/images/gallery/algonquin/algonquin-backcountry-sunset.jpg" class="card-img-top" alt="Maple Reserve">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">Algonquin park</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.ontarioparks.ca/images/gallery/bonecho/bon-echo---canoeist_21454590141_o.jpg" class="card-img-top" alt="Lakewood Trail">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">Bon Echo</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.ontarioparks.ca/images/gallery/silverlake/silverlake_swimmingarea_49730589191_o.jpg" class="card-img-top" alt="Greenhill Park">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">Silver Lake</h5>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+  
+
+  <!-- Guide Section -->
+<div class="container my-5">
+    <div class="row align-items-center">
+      <!-- Left Column: Title, vertically centered -->
+      <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center">
+        <h2 class="section-title">Your Perfect Guide for Camping</h2>
+      </div>
+  
+      <!-- Right Column: 2x2 Cards -->
+      <div class="col-md-8">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Eco-friendly camping">
+              <div class="card-body">
+                <p class="card-title mb-0">Eco-friendly camping tips</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Essential packing guide">
+              <div class="card-body">
+                <p class="card-title mb-0">Essential packing guide</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Campfire safety rules">
+              <div class="card-body">
+                <p class="card-title mb-0">Campfire safety rules</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Top Ontario camping spots">
+              <div class="card-body">
+                <p class="card-title mb-0">Top Ontario camping spots</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+<!-- What's Happening -->
+<div class="container my-5">
+    <div class="row align-items-center">
+      <!-- Left Column: 2x2 Cards -->
+      <div class="col-md-8 mb-4">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://amateurphotographer.com/wp-content/uploads/sites/7/2019/04/spring-wildlife-watch-behaviour.jpg" class="card-img-top" alt="Wildlife Watch">
+              <div class="card-body">
+                <p class="card-title mb-0">Spring Wildlife Watch</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://amateurphotographer.com/wp-content/uploads/sites/7/2019/04/spring-wildlife-watch-behaviour.jpg" class="card-img-top" alt="Hiking Events">
+              <div class="card-body">
+                <p class="card-title mb-0">Guided Hiking Events</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://amateurphotographer.com/wp-content/uploads/sites/7/2019/04/spring-wildlife-watch-behaviour.jpg" class="card-img-top" alt="Park Cleanup">
+              <div class="card-body">
+                <p class="card-title mb-0">Volunteer Park Cleanups</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://amateurphotographer.com/wp-content/uploads/sites/7/2019/04/spring-wildlife-watch-behaviour.jpg" class="card-img-top" alt="Workshops">
+              <div class="card-body">
+                <p class="card-title mb-0">Nature Photography Workshops</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Column: Title and Button -->
+      <div class="col-md-4 d-flex flex-column justify-content-center align-items-start text-md-start text-center">
+        <h2 class="section-title mb-3">What’s Happening in Ontario Parks?</h2>
+        <a href="#" class="btn btn-primary">Explore All Events</a>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!--Testimonial-->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">What our visitors say</h2>
+  
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <div class="testimonial-card p-4 mx-auto" style="max-width: 700px;">
+            <h5 class="fw-bold mb-3">🔥Perfect for First-Time Campers</h5>
+            <p class="fst-italic">"As someone new to camping, I was a bit nervous, but Ontario Parks made it so easy. The park had beginner-friendly trails, clear signage, and even a guidebook for first-time visitors. It was the perfect balance of adventure and comfort!"</p>
+            <p class="fw-semibold mt-3">— Ayesha K., Toronto</p>
+          </div>
+        </div>
+  
+        <!-- Add more carousel-item divs here if needed -->
+  
+      </div>
+  
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  
+<!-- Protecting nature for our gen-->
+
+<div class="container my-5">
+    <!-- Section Header with controls -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="section-title mb-0">Protecting Nature for Future Generations</h2>
+      <div class="d-flex align-items-center gap-2">
+        <a href="#" class="text-decoration-none me-3 fw-semibold">View All</a>
+        <button class="btn btn-outline-secondary btn-sm prev-events">&lt;</button>
+        <button class="btn btn-outline-secondary btn-sm next-events">&gt;</button>
+      </div>
+    </div>
+  
+    <!-- Events Grid -->
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 event-track">
+        <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <p href ="#" class="card-title mb-0">How Ontario Parks supports conservation</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <p href ="#" class="card-title mb-0">Eco-friendly camping tips</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <p href ="#" class="card-title mb-0">Volunteer & donation opportunities</p>
+              </div>
+            </div>
+          </div>
+      <!-- Add more cards if needed -->
+    </div>
+  </div>  
+
+  <!-- Adventure Tips, Camping Guides & More -->
+  <div class="container my-5">
+    <!-- Section Header with controls -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="section-title mb-0">Adventure Tips, Camping Guides & More</h2>
+      <div class="d-flex align-items-center gap-2">
+        <a href="#" class="text-decoration-none me-3 fw-semibold">View All</a>
+        <button class="btn btn-outline-secondary btn-sm prev-events">&lt;</button>
+        <button class="btn btn-outline-secondary btn-sm next-events">&gt;</button>
+      </div>
+    </div>
+  
+    <!-- Events Grid -->
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 event-track">
+        <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <p href ="#" class="card-title mb-0">10 Must-Visit Parks in Ontario</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <p href ="#" class="card-title mb-0">How to Camp Sustainably & Leave No Trace</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://www.ontarioparks.ca/images/gallery/aaron/aaron_19950498715_o.jpg" class="card-img-top" alt="Arron Park">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <p href ="#" class="card-title mb-0">Best Trails for Beginners & Families</p>
+              </div>
+            </div>
+          </div>
+      <!-- Add more cards if needed -->
+    </div>
+  </div>  
+
+
+
+  <!-- Help Section -->
+  <div class="container my-5">
+    <h2 class="section-title">Need Help? We're Here for You!</h2>
+    <div class="accordion" id="helpAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faqCollapse">
+            FAQs
+          </button>
+        </h2>
+        <div id="faqCollapse" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+          <div class="accordion-body">
+            <a href="#">Getting Started</a><br />
+            <a href="#">Account Issues</a><br />
+            <a href="#">Troubleshooting</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="helpAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accessibilityCollapse">
+                Accessibility Services
+            </button>
+          </h2>
+          <div id="accessibilityCollapse" class="accordion-collapse collapse" data-bs-parent="#accessibilityAccordion">
+            <div class="accordion-body">
+              <a href="#">Getting Started</a><br />
+              <a href="#">Account Issues</a><br />
+              <a href="#">Troubleshooting</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" id="helpAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#emergencyCollapse">
+                Emergency Contact Info
+            </button>
+          </h2>
+          <div id="emergencyCollapse" class="accordion-collapse collapse" data-bs-parent="#emergencyAccordion">
+            <div class="accordion-body">
+              <a href="#">Getting Started</a><br />
+              <a href="#">Account Issues</a><br />
+              <a href="#">Troubleshooting</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+  </div>
+
+ <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Left: Footer Grid -->
+        <div class="col-md-8">
+          <div class="row row-cols-3 g-3">
+            <!-- Total of 12 links -->
+            <div class="col"><a href="#" class="text-light">Parks</a></div>
+            <div class="col"><a href="#" class="text-light">Event</a></div>
+            <div class="col"><a href="#" class="text-light">Guide Program</a></div>
+            <div class="col"><a href="#" class="text-light">Activities</a></div>
+            <div class="col"><a href="#" class="text-light">Rent Equipment</a></div>
+            <div class="col"><a href="#" class="text-light">Store</a></div>
+            <div class="col"><a href="#" class="text-light">Fees</a></div>
+            <div class="col"><a href="#" class="text-light">Blog</a></div>
+            <div class="col"><a href="#" class="text-light">Contact</a></div>
+            <div class="col"><a href="#" class="text-light">Donate</a></div>
+            <div class="col"><a href="#" class="text-light">Subscription</a></div>
+            <div class="col"><a href="#" class="text-light">Privacy & Security</a></div>
+          </div>
+        </div>
+  
+        <!-- Right: Newsletter -->
+        <div class="col-md-4 border-start ps-md-4 mt-4 mt-md-0">
+          <h5 class="fw-semibold mb-3">Park updates & travel tips. Subscribe now!</h5>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter your First Name..." />
+            <button class="btn btn-success">Subscribe</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="border-secondary my-4" />
+  
+      <!-- Bottom Section -->
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p class="small text-light mb-2">
+            We are committed to providing accessible customer service. If you need an alternative accessible format of this content, please contact us, Ministry of the Environment, Conservation and Parks.
+          </p>
+          <p class="small text-light mb-0">© King's Printer for Ontario, 2025</p>
+        </div>
+        <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+          <img src="onlogo.svg" alt="Ontario Logo" style="height: 40px;" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- jQuery + Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
