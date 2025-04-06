@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--- Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Park Booking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Parks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+  <div class="product">
+    <div class="product-image">
+      <img src="">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Silver Lake Provincial Park</div>
+      <p class="product-description">Tue, Jul 15, 2025</p>
+      <p class="product-description">Wed, Jul 16, 2025</p>
+      <p class="product-description">Dawson Campground - Site 7</p>
+    <div class="product-description">1 Night</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Sub total</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>ReservationFee-web</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+
+  </div>
+    <div class="checkout">
+        <p>Total is estimated, taxes included.Additional fees or discounts may apply.</p>
+      <button class="checkout">Proceed to Checkout</button>
+</div>
+
+<!--Footer-->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- Left: Footer Grid -->
+        <div class="col-md-8">
+          <div class="row row-cols-3 g-3">
+            <!-- Total of 12 links -->
+            <div class="col"><a href="#" class="text-light">Parks</a></div>
+            <div class="col"><a href="#" class="text-light">Event</a></div>
+            <div class="col"><a href="#" class="text-light">Guide Program</a></div>
+            <div class="col"><a href="#" class="text-light">Activities</a></div>
+            <div class="col"><a href="#" class="text-light">Rent Equipment</a></div>
+            <div class="col"><a href="#" class="text-light">Store</a></div>
+            <div class="col"><a href="#" class="text-light">Fees</a></div>
+            <div class="col"><a href="#" class="text-light">Blog</a></div>
+            <div class="col"><a href="#" class="text-light">Contact</a></div>
+            <div class="col"><a href="#" class="text-light">Donate</a></div>
+            <div class="col"><a href="#" class="text-light">Subscription</a></div>
+            <div class="col"><a href="#" class="text-light">Privacy & Security</a></div>
+          </div>
+        </div>
+  
+        <!-- Right: Newsletter -->
+        <div class="col-md-4 border-start ps-md-4 mt-4 mt-md-0">
+          <h5 class="fw-semibold mb-3">Park updates & travel tips. Subscribe now!</h5>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter your First Name..." />
+            <button class="btn btn-success">Subscribe</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="border-secondary my-4" />
+  
+      <!-- Bottom Section -->
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p class="small text-light mb-2">
+            We are committed to providing accessible customer service. If you need an alternative accessible format of this content, please contact us, Ministry of the Environment, Conservation and Parks.
+          </p>
+          <p class="small text-light mb-0">© King's Printer for Ontario, 2025</p>
+        </div>
+        <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+          <img src="onlogo.svg" alt="Ontario Logo" style="height: 40px;" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- jQuery + Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
